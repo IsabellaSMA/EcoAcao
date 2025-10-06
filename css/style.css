@@ -15,10 +15,10 @@
 
  .cenario{ /*Cenário do jogo*/
     position: absolute;
-    top:0;
+    top: 0;
     left:0;
-    width: 100%;
-    height: 100%;
+    width: 1000px;
+    height:650px;
     object-fit: cover; /*mantem a proporção sem distorcer*/
     /*z-index: 1; */
 
@@ -27,74 +27,74 @@
 /* Latas que ficam EM BAIXOOOO, AS COTIDIANAS */
 .amarelo{
     position: absolute;
-    width: 17%;
-    bottom:50px;
-    right: 970px;
+    width: 20%;
+    bottom:5px;
+    left: -20px;
         
 }
 .azul{
     position: absolute;
-    width: 17%;
-    bottom: 50px;;
-    right: 800px;
+    width: 20%;
+    bottom: 5px;
+    left: 180px;
 }
 
 .vermelho{
     position: absolute;
-    width: 17%;
-    bottom: 50px;;
-    right: 600px;
+    width: 20%;
+    bottom: 5px;
+    left: 400px;
 }
 .verde{
     position: absolute;
-    width: 17%;
-    bottom: 50px;;
-    right: 400px;
+    width: 20%;
+    bottom: 5px;;
+    left: 580px;
 }
 
 .cinza{
     position: absolute;
-    width: 17%;
-    bottom: 50px;;
-    right:200px;
+    width: 20%;
+    bottom: 5px;;
+    left:800px;
 }
 
 /*Latas que ficam EM CIMAAAA, OU SEJA, AS DIFERENTONAS */
 
 .laranja{
     position: absolute;
-    width: 15%;
+    width: 20%;
     top: 50px;
-    right: 1000px;
+    left:-20px;
     
 }
 
 .marrom{
     position: absolute;
-    width: 15%;
+    width: 20%;
     top: 50px;
-    right: 800px;
+    left: 180px;
 }
 
 .preto{
     position: absolute;
-    width: 15%;
+    width: 20%;
     top: 50px;
-    right: 600px;
+    left: 400px;
 }
 
 .roxo{
     position: absolute;
-    width: 15%;
+    width: 20%;
     top: 50px;
-    right: 400px;
+    left: 580px;
 }
 
 .branco{
     position: absolute;
-    width: 15%;
+    width: 20%;
     top: 50px;
-    right: 200px;
+    left: 800px;
 }
 
 /*  LIXOOOOOSSSS*   /
