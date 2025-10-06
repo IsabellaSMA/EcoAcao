@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    box-sizing: border-box;	
+}
+
+.game-board{ /* especificando como será a janela do jogo */
+	position: relative;
+    width: 1000px;
+	height: 600px;
+	border: 2px solid #000;
+    overflow: hidden;
+    margin: auto;
+   
+	}
+
+ .cenario{ /*Cenário do jogo*/
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*mantem a proporção sem distorcer*/
+    /*z-index: 1; */
+
+}
+
+/* Latas que ficam EM BAIXOOOO, AS COTIDIANAS */
+.amarelo{
+    position: absolute;
+    width: 17%;
+    bottom:50px;
+    right: 970px;
+        
+}
+.azul{
+    position: absolute;
+    width: 17%;
+    bottom: 50px;;
+    right: 800px;
+}
+
+.vermelho{
+    position: absolute;
+    width: 17%;
+    bottom: 50px;;
+    right: 600px;
+}
+.verde{
+    position: absolute;
+    width: 17%;
+    bottom: 50px;;
+    right: 400px;
+}
+
+.cinza{
+    position: absolute;
+    width: 17%;
+    bottom: 50px;;
+    right:200px;
+}
+
+/*Latas que ficam EM CIMAAAA, OU SEJA, AS DIFERENTONAS */
+
+.laranja{
+    position: absolute;
+    width: 15%;
+    top: 50px;
+    right: 1000px;
+    
+}
+
+.marrom{
+    position: absolute;
+    width: 15%;
+    top: 50px;
+    right: 800px;
+}
+
+.preto{
+    position: absolute;
+    width: 15%;
+    top: 50px;
+    right: 600px;
+}
+
+.roxo{
+    position: absolute;
+    width: 15%;
+    top: 50px;
+    right: 400px;
+}
+
+.branco{
+    position: absolute;
+    width: 15%;
+    top: 50px;
+    right: 200px;
+}
+
+/*  LIXOOOOOSSSS*   /
+
+    /*Metal*/
+
+/*Papel*/
+    .papel-bolinha{
+        position: absolute;
+        width: 120px; /*tamanho do lixo*/
+        bottom: 250px; /*altura que o lixo ficará na esteira*/
+        overflow: hidden;  /*para que o lixo nao fique a mostra quando sair da tela*/
+
+    }
+
+    .papel-folha{
+        position: absolute;
+        width: 170px; /*tamanho do lixo*/
+        bottom: 250px; /*altura que o lixo ficará na esteira*/
+        overflow: hidden;  /*para que o lixo nao fique a mostra quando sair da tela*/
+    } 
+
+
+/*Plástico */
+    .garrafa-agua, .garrafa-detergente,.garrafa-refri{
+        position: absolute;
+        width: 170px; /*tamanho do lixo*/
+        bottom: 250px; /*altura que o lixo ficará na esteira*/
+        overflow: hidden;  /*para que o lixo nao fique a mostra quando sair da tela*/
+    }
+
+
+/*Vidro */
+    .garrafa-vidro{
+        position: absolute;
+        width: 180px; /*tamanho do lixo*/
+        bottom: 250px; /*altura que o lixo ficará na esteira*/
+        overflow: hidden;  /*para que o lixo nao fique a mostra quando sair da tela*/
+    }
+
+/*Não recicláveis */
+    .espelho{
+        position: absolute;
+        width: 170px; /*tamanho do lixo*/
+        bottom: 250px; /*altura que o lixo ficará na esteira*/
+        overflow: hidden;  /*para que o lixo nao fique a mostra quando sair da tela*/
+    }
+
+/*Toxicos
+*/
+
+/*Organico
+*/
+
+/*Madeira
+*/
+
+/*Radioativos
+*/
+
+/*Hospitalar */
+    .mascara{
+        position: absolute;
+        width: 180px; /*tamanho do lixo*/
+        bottom: 250px; /*altura que o lixo ficará na esteira*/
+        overflow: hidden;  /*para que o lixo nao fique a mostra quando sair da tela*/
+    }
+    .seringa{
+        position: absolute;
+        width: 100px; /*tamanho do lixo*/
+        bottom: 250px; /*altura que o lixo ficará na esteira*/
+        overflow:hidden;  /*para que o lixo nao fique a mostra quando sair da tela*/
+    }
+
+/* Animação dos lixos*/
+
+@keyframes moverLixo{
+    0%{ /*inicio animação*/
+        left:-120px;
+        opacity: 1;
+    }
+    80%{ /*meio animação*/
+        left:100%;
+        opacity: 1;
+    }
+    100%{
+        left:100%;
+        opacity: 0;
+    }
+}
+
+.lixo{ /*Classe padrão para os lixos*/
+    position: absolute;
+    top: 230px;
+    width: 160px;
+    animation: moverLixo 15s linear forwards;
+    z-index: 2;
+} 
+
+.lixo .papel-folha{ /*deixar um delay na animação dos lixos. Todos estão indo grudados e na mesma velocidade*/
+    animation-delay: 0s ;
+}
