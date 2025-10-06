@@ -171,29 +171,38 @@
 
 /* Animação dos lixos*/
 
-@keyframes moverLixo{
+@keyframes moverLixo{ /*Estrutura base para a animação */
     0%{ /*inicio animação*/
-        left:-120px;
+        left:-300px;
         opacity: 1;
     }
     80%{ /*meio animação*/
-        left:100%;
+        left: 100%;
         opacity: 1;
     }
     100%{
         left:100%;
-        opacity: 0;
+        opacity: 0; /* no final faz o lixo sumir suavemente*/
     }
 }
 
-.lixo{ /*Classe padrão para os lixos*/
+.lixo{ /*Classe padrão para definir o tamanho dos lixos e sua movimentação*/
     position: absolute;
     top: 230px;
     width: 160px;
-    animation: moverLixo 15s linear forwards;
+    animation: moverLixo 20s linear forwards;
     z-index: 2;
 } 
 
-.lixo .papel-folha{ /*deixar um delay na animação dos lixos. Todos estão indo grudados e na mesma velocidade*/
-    animation-delay: 0s ;
-}
+/*Delay de animação 
+.papel-folha { animation-delay: 4s; }
+.papel-bolinha { animation-delay: 4s; }
+.garrafa-agua { animation-delay: 4s; }
+.garrafa-detergente { animation-delay: 4s; }
+.garrafa-refri { animation-delay: 4s; }
+.garrafa-vidro { animation-delay: 4s; }
+.espelho { animation-delay: 4s; }
+.copo-vidro { animation-delay: 4s; }
+.mascara { animation-delay:4s; }
+.seringa { animation-delay:4s; }
+*/

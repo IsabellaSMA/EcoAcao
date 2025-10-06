@@ -5,8 +5,9 @@ estruturei o jogo yuupi. Tirei um projeto do papel finalmente, mass..
 - Lixeiras- sem querer, mudando o tamano da tela, precisda deias as lixeiras maiores de novo e mudar suas posições. A laranja e amarelo sumiram - Fixed
   
   
--  Animações dos lixos -> Todos estão grudados uns nos outros então não tem delay de animação
+-  Animações dos lixos -> Todos estão grudados uns nos outros então não tem delay de animação: adicionei mas não estou satisfeita com o delay
 -  
+
 
 
 Add Futuamente(só para nao esquecer)
